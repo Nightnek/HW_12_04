@@ -22,7 +22,7 @@ HAVING COUNT(c.store_id) > 300;
 ## Задание 2
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
 
-![image](https://github.com/Nightnek/HW_12_04/assets/127677631/2ed1a63e-3042-40a5-b6a8-5dcf1f8bc408)
+![image](https://github.com/Nightnek/HW_12_04/assets/127677631/3e8b4b09-6434-487b-821f-f55bc472bbf4)
 
 
 ````
