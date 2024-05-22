@@ -34,6 +34,7 @@ WHERE length > (SELECT AVG(length) from film);
 
 ## Задание 3
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
+
 ![image](https://github.com/Nightnek/HW_12_04/assets/127677631/2bedfae9-cb4f-47dd-ad59-a2483c795db6)
 
 ````
