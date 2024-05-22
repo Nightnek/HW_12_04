@@ -35,13 +35,13 @@ WHERE length > (SELECT AVG(length) from film);
 ## Задание 3
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
 
-![image](https://github.com/Nightnek/HW_12_04/assets/127677631/2bedfae9-cb4f-47dd-ad59-a2483c795db6)
+![image](https://github.com/Nightnek/HW_12_04/assets/127677631/dece74be-26a6-4f5e-829b-0a7662b939c9)
 
 ````
-SELECT MONTH(p.payment_date) as payment_month, SUM(p.amount) as amount_sum, COUNT(r.rental_id) as count_of_rents
+SELECT DATE_FORMAT(p.payment_date, '%m-%Y') as payment_month, SUM(p.amount) as amount_sum, COUNT(r.rental_id) as count_of_rents
 FROM payment p
 JOIN rental r ON r.rental_id = p.rental_id 
-GROUP BY MONTH(p.payment_date)
+GROUP BY DATE_FORMAT(p.payment_date, '%m-%Y')
 ORDER BY SUM(p.amount) DESC
 LIMIT 1;
 
